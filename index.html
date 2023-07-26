@@ -111,27 +111,6 @@
 	    ]
 	},
 	{
-	    title: "Cual es la diferencia entre grid y flexbox.",
-	    options: [
-		{
-		    label: "No tienen diferencia ya su principio es el mismo.",
-		    value: "A"
-		},
-		{
-		    label: "Grid utiliza un diseño bidimensional y flexbox unidimensional",
-		    value: "B"
-		},
-		{
-		    label: "grid utiliza un diseño unidimensional y flexbox tridimensional",
-		    value: "C"
-		},
-		{
-		    label: "grid es una libreria de css y flexbox js",
-		    value: "D"
-		},
-	    ]
-	},
-	{
 	    title: "De las siguientes propiedades seleccione cual no es un propiedad de grid.",
 	    options: [
 		{
@@ -166,16 +145,19 @@
         let score = 0.0;
 	for (const [key, value] of Object.entries(respuestas)) {
 	    if (key === 'respuesta1' && value === "A") {
-		score += 2.5;
+		score += 2;
 	    }
 	    if (key === 'respuesta2' && value === "D") {
-		score += 2.5;
+		score += 2;
 	    }
 	    if (key === 'respuesta3' && value === "D") {
-		score += 2.5;
+		score += 2;
 	    }
 	    if (key === 'respuesta4' && value === "B") {
-		score += 2.5;
+		score += 2;
+	    }
+	    if (key === 'respuesta5' && value === "C") {
+		score += 2;
 	    }
 	}
         let html=`<div class="result"><span class="bg-success border border-success text-light rounded-circle font-weight-bold">${score}</span></div>
